@@ -8,7 +8,7 @@ import android.widget.DatePicker
 import androidx.fragment.app.DialogFragment
 import java.util.*
 
-class DatePickerFragment : DialogFragment(), DatePickerDialog.OnDateSetListener {
+class DatePickerFragmen : DialogFragment(), DatePickerDialog.OnDateSetListener {
     private var mListener: DialogDateListener? = null
     override fun onAttach(context: Context) {
         super.onAttach(context)
@@ -33,5 +33,4 @@ class DatePickerFragment : DialogFragment(), DatePickerDialog.OnDateSetListener 
     interface DialogDateListener {
         fun onDialogDateSet(tag: String?, year: Int, month: Int, dayOfMonth: Int)
     }
-
 }
